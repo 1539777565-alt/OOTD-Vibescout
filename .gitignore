@@ -55,8 +55,8 @@ Thumbs.db
 .learnings/
 memory/
 *.md
-!ootd/README.md
-!ootd/prd.md
+!README.md
+!prd.md
 !.gitkeep
 
 # API Keys - 切记不要推送

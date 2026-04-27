@@ -33,21 +33,21 @@ Demo 截图建议保留这三块：
 ## 本地运行
 
 ```bash
-cd /Users/xiaohao/.openclaw/workspace/ootd
-./bin/python app.py
+cd /path/to/OOTD-Vibescout
+./ootd/bin/python ootd/app.py
 ```
 
 如果 `7874` 端口被占用：
 
 ```bash
-GRADIO_SERVER_PORT=7875 ./bin/python app.py
+GRADIO_SERVER_PORT=7875 ./ootd/bin/python ootd/app.py
 ```
 
 如需真实调用 VLM，可以设置环境变量；如果未设置，应用会尝试读取 OpenClaw 本地配置 `~/.openclaw/config/minimax.json`：
 
 ```bash
 export MINIMAX_API_KEY="your_api_key"
-./bin/python app.py
+./ootd/bin/python ootd/app.py
 ```
 
 如果两处都没有 API Key，应用会明确提示缺少密钥，不会返回固定兜底结果。这样可以保证面试演示时每次上传图片都是真实 VLM 解析。
